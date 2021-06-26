@@ -1,0 +1,331 @@
+SQL Query:
+
+•	create database company;
+•	use company;
+•	create table Department(Deptid Integer Primary Key,Deptname varchar(25) not null unique);
+•	create table Employees(Empid Integer Primary Key,Ename varchar(20) not null,Deptid Integer,foreign key(Deptid) references Department(Deptid) on delete cascade on update cascade);
+
+Sample Output
+
+•	desc Department;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| Deptid   | int(11)     | NO   | PRI | NULL    |       |
+| Deptname | varchar(10) | NO   | UNI | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+
+•	desc Employees;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| Empid  | int(11)     | NO   | PRI | NULL    |       |
+| Ename  | varchar(20) | NO   |     | NULL    |       |
+| Deptid | int(11)     | YES  | MUL | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+
+2. Add an attribute ‘emailid’ of data type ‘varchar’ with size 40, salary of data type integer and remarks of data type varchar with size 45 to the Employee Table.
+
+SQL Query:
+
+•	alter table Employees add emailid varchar(40),add salary integer,add remarks varchar(45);
+
+Sample Output
+
+•	desc Employees;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| Empid   | int(11)     | NO   | PRI | NULL    |       |
+| Ename   | varchar(20) | NO   |     | NULL    |       |
+| Deptid  | int(11)     | YES  | MUL | NULL    |       |
+| emailid | varchar(40) | YES  |     | NULL    |       |
+| salary  | int(11)     | YES  |     | NULL    |       |
+| remarks | varchar(45) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+3. Add unique constraint to the attribute ‘emailid’.
+
+SQL Query:
+
+•	alter table Employees add unique(emailid);
+
+Sample Output
+
+•	desc Employees;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| Empid   | int(11)     | NO   | PRI | NULL    |       |
+| Ename   | varchar(20) | NO   |     | NULL    |       |
+| Deptid  | int(11)     | YES  | MUL | NULL    |       |
+| emailid | varchar(40) | YES  | UNI | NULL    |       |
+| salary  | int(11)     | YES  |     | NULL    |       |
+| remarks | varchar(45) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+
+
+4. Add an attribute salary of data type integer with a constraint that salary never falls  below 5000. 
+
+SQL Query:
+
+•	alter table Employees add constraint salary_check check (salary>=5000);
+
+Sample Output
+
+•	desc Employees;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| Empid   | int(11)     | NO   | PRI | NULL    |       |
+| Ename   | varchar(20) | NO   |     | NULL    |       |
+| Deptid  | int(11)     | YES  | MUL | NULL    |       |
+| emailid | varchar(40) | YES  | UNI | NULL    |       |
+| salary  | int(11)     | YES  |     | NULL    |       |
+| remarks | varchar(45) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+5. Drop ‘remarks’ attribute from the table Employee.
+
+SQL Query:
+
+•	alter table Employees drop column remarks;
+
+Sample Output
+
+•	desc Employees;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| Empid   | int(11)     | NO   | PRI | NULL    |       |
+| Ename   | varchar(20) | NO   |     | NULL    |       |
+| Deptid  | int(11)     | YES  | MUL | NULL    |       |
+| emailid | varchar(40) | YES  | UNI | NULL    |       |
+| salary  | int(11)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+6. Describe the Department and Employee tables. 
+
+SQL Query:
+
+•	desc Employees;
+•	desc Department;
+
+
+
+
+Sample Output
+
+•	desc Employees;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| Empid   | int(11)     | NO   | PRI | NULL    |       |
+| Ename   | varchar(20) | NO   |     | NULL    |       |
+| Deptid  | int(11)     | YES  | MUL | NULL    |       |
+| emailid | varchar(40) | YES  | UNI | NULL    |       |
+| salary  | int(11)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+•	desc Department;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| Deptid   | int(11)     | NO   | PRI | NULL    |       |
+| Deptname | varchar(10) | NO   | UNI | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+
+7. Insert at least 5 tuples to Department and Employee tables.
+
+SQL Query:
+
+•	insert into Department
+     values(101,'sales'),(202,'production'),(201,'Maintenance'),(401,'Testing'),(501,'analysing');
+•	insert into Employees values(1331,'Anna',401,'anna@gmail.com',7000),(2016,'Kalyani',501,'kallu@gmail.com',13000),(1221,'Joshy',202,'joshy@gmail.com',8000),(2010,'Ashu',101,'ashu@gmail.com',9000),(2015,'Anu',201,'anu@gmail.com',10000);
+
+Sample Output
+
+
+•	select * from Department;
++--------+-------------+
+| Deptid | Deptname    |
++--------+-------------+
+|    501 | analysing   |
+|    201 | Maintenance |
+|    202 | production  |
+|    101 | sales       |
+|    401 | Testing     |
++--------+-------------+
+
+•	select * from Employees;
++-------+---------+--------+-----------------+--------+
+| Empid | Ename   | Deptid | emailid         | salary |
++-------+---------+--------+-----------------+--------+
+|  1221 | Joshy   |    202 | joshy@gmail.com |   8000 |
+
+
+
+|  1331 | Anna    |    401 | anna@gmail.com  |   7000 |
+|  2010 | Ashu    |    101 | ashu@gmail.com  |   9000 |
+|  2015 | Anu     |    201 | anu@gmail.com   |  10000 |
+|  2016 | Kalyani |    501 | kallu@gmail.com |  13000 |
++-------+---------+--------+-----------------+--------+
+
+8. Retrieve the entire contents of the Department and Employee tables.
+
+SQL Query:
+
+•	select * from Department;
+•	select * from Employees;
+
+Sample Output
+
+•	select * from Department;
++--------+-------------+
+| Deptid | Deptname    |
++--------+-------------+
+|    501 | analysing   |
+|    201 | Maintenance |
+|    202 | production  |
+|    101 | sales       |
+|    401 | Testing     |
++--------+-------------+
+
+•	select * from Employees;
++-------+---------+--------+-----------------+--------+
+| Empid | Ename   | Deptid | emailid         | salary |
++-------+---------+--------+-----------------+--------+
+|  1221 | Joshy   |    202 | joshy@gmail.com |   8000 |
+|  1331 | Anna    |    401 | anna@gmail.com  |   7000 |
+|  2010 | Ashu    |    101 | ashu@gmail.com  |   9000 |
+|  2015 | Anu     |    201 | anu@gmail.com   |  10000 |
+|  2016 | Kalyani |    501 | kallu@gmail.com |  13000 |
++-------+---------+--------+-----------------+--------+
+
+
+9. Find out the name of the Employees in the Department with Deptid 101.
+
+SQL Query:
+
+•	select Ename from employees where Deptid=101;
+
+Sample Output
+
++-------+
+| Ename |
++-------+
+| Ashu  |
++-------+
+
+
+
+10. Display the name and salary of all Employees.
+
+SQL Query:
+
+•	select Ename,salary from Employees;
+
+Sample Output
+
++---------+--------+
+| Ename   | salary |
++---------+--------+
+| Joshy   |   8000 |
+| Anna    |   7000 |
+| Ashu    |   9000 |
+| Anu     |  10000 |
+| Kalyani |  13000 |
++---------+--------+
+
+11. Update the salary of the employee with employee id ‘1221’ to Rs. 50000.
+
+SQL Query:
+
+•	update Employees set salary=50000 where EmpId=1221;
+
+Sample Output
+
+•	select * from Employees;
++-------+---------+--------+-----------------+--------+
+| Empid | Ename   | Deptid | emailid         | salary |
++-------+---------+--------+-----------------+--------+
+|  1221 | Joshy   |    202 | joshy@gmail.com |  50000 |
+|  1331 | Anna    |    401 | anna@gmail.com  |   7000 |
+|  2010 | Ashu    |    101 | ashu@gmail.com  |   9000 |
+|  2015 | Anu     |    201 | anu@gmail.com   |  10000 |
+|  2016 | Kalyani |    501 | kallu@gmail.com |  13000 |
++-------+---------+--------+-----------------+--------+
+
+
+12. Delete the details of employee with employee id ‘1331’.
+
+SQL Query:
+
+•	delete from Employees where Empid=1331;
+
+Sample Output
+
+•	select * from Employees;
++-------+---------+--------+-----------------+--------+
+| Empid | Ename   | Deptid | emailid         | salary |
++-------+---------+--------+-----------------+--------+
+|  1221 | Joshy   |    202 | joshy@gmail.com |  50000 |
+|  2010 | Ashu    |    101 | ashu@gmail.com  |   9000 |
+
+
+|  2015 | Anu     |    201 | anu@gmail.com   |  10000 |
+|  2016 | Kalyani |    501 | kallu@gmail.com |  13000 |
++-------+---------+--------+-----------------+--------+
+
+
+13. Find the name of employees who has a salary equal to Rs.13000. 
+
+SQL Query:
+
+•	select Ename from Employees where salary=13000;
+
+Sample Output
+
++---------+
+| Ename   |
++---------+
+| Kalyani |
++---------+
+
+
+14. Delete the department with Deptid ’201’
+
+SQL Query:
+
+•	delete from Department where Deptid=201;
+
+Sample Output
+
+•	select * from Department;
++--------+------------+
+| Deptid | Deptname   |
++--------+------------+
+|    501 | analysing  |
+|    202 | production |
+|    101 | sales      |
+|    401 | Testing    |
++--------+------------+
+
+
+15. Display the details of employees in the ascending order of their salary.
+
+SQL Query:
+
+•	select * from Employees order by salary asc;
+
+SAMPLE OUTPUT
++-------+---------+--------+-----------------+--------+
+| Empid | Ename   | Deptid | emailid         | salary |
++-------+---------+--------+-----------------+--------+
+|  2010 | Ashu    |    101 | ashu@gmail.com  |   9000 |
+|  2016 | Kalyani |    501 | kallu@gmail.com |  13000 |
+|  1221 | Joshy   |    202 | joshy@gmail.com |  50000 |
++-------+---------+--------+-----------------+--------+

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>ORDERED AND UNORDERED LISTS</title>
+</head>
+<body bgcolor="yellow">
+<h2><u>LISTS IN HTML</u></h2></br>
+<ol type="1">
+<li>Ordered list (Numbered list)
+<li>Unordered list (Unnumbered list)
+</ol>
+<b><u>ORDERED LIST</u></b>
+<ol type="i">
+<li>List of items appear with a use of numbers or alphabets is called 'ordered list'.
+<li>The attributes that can be specified with the ordered list tag is 'Type' and 'Start'.
+<li>Start:Alters the numbering sequence.
+<li>Type="1" :counting numbers(1,2..)
+<li>Type="A" :uppercase letters(A,B..)
+<li>Type="a" :lowercase letters(a,b..)
+<li>Type="I" :uppercase roman numbers(I,II..)
+<li>Type="i" :lowercase roman numbers(i,ii..)
+</ol>
+<b><u>UNORDERED LIST</u></b>
+<ul type="circle">
+<li>It appear as a list of items with "bullets" or markers in the front.
+<li>Important attribute of an unordered list is 'Type'.
+<li>values of type atttributes: Disc,Circle and Square.
+</ul>
+<b><u>ANOTHER LIST IN HTML</u></b>
+
+
+<ul type="square">
+<li>Definition list
+<li>It is a list items without bullet or numbers.
+<li>It is list of items and definitions
+</ul>
+</body>
+</html>

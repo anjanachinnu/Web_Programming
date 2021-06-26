@@ -1,0 +1,80 @@
+iframe.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>iframes</title>
+</head>
+<body align="center">
+<h1 style="color:red;">FRAMES</h1>
+<iframe name="frame1" src="cont.html" height="500px" width="500px" style="background-color:yellow";></iframe>
+<iframe name="frame2" src="data.html" height="500px" width="500px" style="background-color:yellow";></iframe>
+</body>
+</html>
+
+cont.html
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>iframes</title>
+</head>
+<body align="center">
+<h2><a href="fruits.html" target="frame2">FRUITS</a><br><br><br>
+<a href=" veg.html" target="frame2">VEGETABLES</a><br><br><br><br>
+<a href=" flowers.html" target="frame2">FLOWERS</a><br><br><br>
+<a href=" trees.html" target="frame2">TREES</a><br><br><br></h2>
+</body>
+</html>
+
+data.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>iframes</title>
+</head>
+<body align="center">
+<br><br><br><br><br><br><br><br><h2 align="center">Select any of the item shown on the left</h2>
+</body>
+</html>
+
+fruits.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>fruits</title>
+</head>
+<body align="center">
+<h1 style="color:green";><u>FRUITS</u></h1>
+<img align="left" src="fruits.jpg" width="250px" height="250px">
+<b>Fruits are the means by which angiosperms disseminate seeds. Edible fruits, in particular, have propagated with the movements of humans and animals in a symbiotic relationship as a means for seed dispersal and nutrition; in fact, humans and many animals have become dependent on fruits as a source of food.Accordingly, fruits account for a substantial fraction of the world's agricultural output, and some (such as the apple and the pomegranate) have acquired extensive cultural and symbolic meanings.</b>
+
+</body>
+</html>
+
+veg.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>vegetables</title>
+</head>
+<body align="center">
+<h1 style="color:cyan";><u>VEGETABLES</u></h1>
+<img align="left" src="veg.jpg" width="250px" height="250px">
+<b>Vegetables are parts of plants that are consumed by humans or other animals as food. The original meaning is still commonly used and is applied to plants collectively to refer to all edible plant matter, including the flowers, fruits, stems, leaves, roots, and seeds. The alternate definition of the term is applied somewhat arbitrarily, often by culinary and cultural tradition. It may exclude foods derived from some plants that are fruits, flowers, nuts, and cereal grains, but include savoury fruits such as tomatoes and courgettes, flowers such as broccoli, and seeds such as pulses</b>
+</body>
+</html>
+
+trees.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>tree</title>
+</head>
+<body align="center">
+<h1 style="color:brown";><u>TREES</u></h1>
+<img align="left" src="tree.png" width="250px" height="250px">
+<b>A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.The roots of a tree are usually under the ground. However, this is not always true. The roots of the mangrove tree are often under water.</b>
+</body>
+</html>
+

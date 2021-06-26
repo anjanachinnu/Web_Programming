@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>HTML TAGS</title>
+</head>
+<body bgcolor="cyan">
+<h1 align="center"><u><font size="5" face="Times new Roman" color="blue">
+BIOGRAPHY OF SUNDAR PICHAI</font></u></h1>
+<h2><marquee align="middle" loop="infinite" direction="right" behaviour="scroll" bgcolor="#B22222">CEO OF GOOGLE</h2></marquee>
+<img src="sundar.png" height ="500px" width="500px" align="middle">
+<h3><font align="left" size="5" face="viner hand ITC" color="black">Sundar Pichai-CEO of google</font></h3>
+<p><b>Sundar Pichai</b>,in full<b> Pichai Sundararajan</b>, (born July 12, 1972, Madras [now Chennai],<i> Tamil Nadu</i>, India),
+<h4>Indian-born American executive who was CEO of both <a href="google.com">Google</a>, and its holding company.</p><br></h4>
+<h5><p>As a boy growing up in<i> Madras</i>, Pichai slept with his brother in the living room of the cramped family home, but his father, an electrical engineer at the<i> British multinational GEC</i>, saw that the boys received a good education.</h5></p></br> 
+<h6>After earning a degree in metallurgy (B.Tech., 1993) and a silver medal at the Indian Institute of Technology Kharagpur, he was awarded a scholarship to study at Stanford University (M.S. in engineering and materials science, 1995).</h6></p>
+</body>
+</html>
+

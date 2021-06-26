@@ -1,0 +1,62 @@
+<html> 
+<head> 
+<title>CSS</title>
+<style>      
+body{         
+    background-color: yellow; 
+    } 
+      h1{ 
+        text-align:center;         
+        color:Red; 
+      } 
+      h2{ 
+            background-color: blue; 
+            color: white; 
+      }       
+      p{ 
+        border: 10px solid cyan;         
+        padding: 30px; 
+      } 
+    </style> 
+  </head> 
+  <body> 
+    <h1>Anjana Krishna</h1> 
+    <ul type="circle"> 
+      <li><h2>Personal Details</h2><br> 
+      <ul type="square"> 
+        <li>Parampuzha(H)
+        <li>Bharananganam P O
+        <li>Pala
+        <li>Pin : 686578
+        <li>Kottayam
+
+      
+      </ul> 
+        
+        <li><h2>Educational Details</h2> 
+        <ul type="square"> 
+          <li>SSLC 
+          <li>Plus Two 
+          <li>BCA
+          <li>MCA
+        </ul> 
+ 
+      <li><h2>Hobbies</h2> 
+        <ul type="square"> 
+          <li>Playing Badminton
+          <li>Dancing 
+          <li>Zumba 
+        </ul> 
+    </ul> 
+ 
+  <p><b>CONTACT</b><br><br> 
+  Parampuzha(H)<br>
+  Bharanananganam P O<br>
+  Pala<br>
+  Pin : 686578<br> 
+  <a href="tel:+91 9747974625">Phone : 9747974625</a> <br> 
+  <a href="mailto:anjanachinnu9181@gmail.com">Mail Me</a> 
+  </p> 
+  </body> 
+</html>
+

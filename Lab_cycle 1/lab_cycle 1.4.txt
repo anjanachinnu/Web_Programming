@@ -1,0 +1,56 @@
+Festi.html
+<html>
+<head>
+<title>festival</title>
+<head>
+<body>
+<h1 align="center"><font face="Calibiri" color="red"><u>FESTIVALS IN INDIA</u></h1>
+<h2><font color="blue">Click the images for more details</h2>
+<a href="onam.html"><img src="onam.png" width=500px height=700px></a>
+<a href="diwa.html"><img src="diwa.png" width=500px height=700px></a>
+<a href="xmas.html"><img src="xmas.png" width=500px height=700px></a>
+</body>
+</html>
+
+onam.html
+<html>
+<head>
+<title>Onam</title>
+</head>
+<body bgcolor="ccc53f">
+<h1 align="center"><font face="Imprint MT Shadow" color="green"><u>ONAM</u></font></h1>
+<img  src="onam.png" width="1000px" height="500"><br>
+<b>Onam is the most popular festival in the state of Kerala, India. Onam is the official state festival of Kerala. It is celebrated with joy and enthusiasm all over the state by Malayalees regardless of religion, caste or creed. According to a popular legend, the festival is celebrated to welcome King Mahabali, whose spirit is said to visit Kerala at the time of Onam.<p align="justify">Onam is a 10 day long festival celebrated in the beginning of the month of Chingam, the first month of the Malayalam 
+
+
+Calendar (Kollavarsham). This corresponds with the month of August to September according to the Gregorian Calendar. Of the 10 days, the first day, Atham and tenth day, Thiruvonam are most important of all.</p><b>
+</body>
+</html>
+
+diwa.html
+<html>
+<head>
+<title>DIWALI</title>
+</head>
+<body bgcolor="pink">
+<h1 align="center"><font face="Imprint MT Shadow" color="blue"><u>DIWALI</u></font></h1>
+<img  src="diwa.png" width="1000px" height="500"><br>
+<b>Diwali (English: /dɪˈwɑːliː/; Deepavali (IAST: dīpāvali) or Divali) is a festival of lights and one of the major festivals celebrated by Hindus, Jains and Sikhs.The festival usually lasts five days and is celebrated during the Hindu lunisolar month Kartika (between mid-October and mid-November). One of the most popular festivals of Hinduism, Diwali symbolizes the spiritual "victory of light over darkness, good over evil, and knowledge over ignorance".<p align="justify">The festival is widely associated with Lakshmi, goddess of prosperity, with many other regional traditions connecting the holiday to Sita and Rama, Vishnu, Krishna, Yama, Yami, Durga, Kali, Hanuman, Ganesha, Kubera, Dhanvantari, or Vishvakarman. Furthermore, it is, in some regions, a celebration of the day Lord Rama returned to his kingdom Ayodhya with his wife Sita and his brother Lakshmana after defeating Ravana in Lanka and serving 14 years of exile.</p><b>
+</body>
+</html>
+
+xmas.html
+<html>
+<head>
+<title>xmas</title>
+</head>
+<body bgcolor="yellow">
+<h1 align="center">
+<font face="Imprint MT Shadow" color="green"><u>CHRISTMAS</u></font></h1>
+<img  src="xmas.png" width="1000px" height="500"><br>
+<b>Christmas (or the Feast of the Nativity)is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world.A feast central to the Christian liturgical year, it is preceded by the season of 
+
+
+Advent or the Nativity Fast and initiates the season of Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night. Christmas Day is a public holiday in many of the world's nations, is celebrated religiously by a majority of Christians, as well as culturally by many non-Christians, and forms an integral part of the holiday season centered around it.<p align="justify">The traditional Christmas narrative, the Nativity of Jesus, delineated in the New Testament says that Jesus was born in Bethlehem, in accordance with messianic prophecies. When Joseph and Mary arrived in the city, the inn had no room and so they were offered a stable where the Christ Child was soon born, with angels proclaiming this news to shepherds who then further disseminated the information</p><b>
+</body>
+</html>

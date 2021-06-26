@@ -1,0 +1,112 @@
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| dbmca2015          |
++--------------------+
+
+mysql> use dbmca2015;
+Database changed
+
+mysql> create table book_details( book_no integer primary key, title varchar(20), edition varchar(20), publisher varchar(20) );
+
+mysql> show tables;
++---------------------+
+| Tables_in_dbmca2015 |
++---------------------+
+| book_details        |
++---------------------+
+
+php4.php
+<html>
+  <head>
+   <title>Book Details</title>
+  </head>
+  <body>
+    <form class="" action="php4_view.php" method="post">
+      <h3 align="center">Enter Book Details</h3>
+    <table border="2" align="center">
+      <tr>
+        <td> <label for="input1"> Book No:</label>  </td>
+        <td><input type="text" name="book_no" value="" id="input1"></td>
+      </tr>
+      <tr>
+        <td><label for="input2"> Title :</label></td>
+        <td><input type="text" name="book_name" value="" id="input2"></td>
+      </tr>
+      <tr>
+        <td><label for="input3"> Edition:</label></td>
+        
+
+<td><input type="text" name="book_edition" value="" id="input3"></td>
+      </tr>
+      <tr>
+        <td><label for="input4"> Publisher:</label></td>
+        <td><input type="text" name="book_publisher" value="" id="input4"></td>
+      </tr>
+      <tr>
+        <td> <input type="submit" name="" value="Submit" width="200px"> </td>
+      </tr>
+    </table>
+
+    </form>
+  </body>
+</html>
+
+php4_view.php
+<?php
+$sname="117.232.108.36";
+$uname="mca2015";
+$pswd="password15";
+$dbname="dbmca2015";
+
+$conn=new mysqli($sname,$uname,$pswd,$dbname);
+
+if($conn->connect_error){
+  die("Connection failed: ">$conn->connect_error);
+}
+    $book_no=$_POST['book_no'];
+        $book_name=$_POST['book_name'];
+        $book_edition=$_POST['book_edition'];
+        $book_publisher=$_POST['book_publisher'];
+        $sql=mysqli_query
+($conn,"insert into book_details values($book_no,'$book_name','$book_edition','$book_publisher')");
+        $query=mysqli_query($conn,"select * from book_details");
+?>
+<html>
+<head>
+<title>Details of Book</title>
+</head>
+  <body>
+        <h2 align="center">All the Book Details </h2>
+    <table border="2" align="center">
+    <tr>
+      <th>Book No</th>
+      <th>Book Name</th>
+      <th>Edition</th>
+      <th>Publisher</th>
+    </tr>
+
+      <?php
+        
+
+        while($row=mysqli_fetch_assoc($query))
+        {
+
+        ?>
+        <tr>
+        <td> <?php echo $row['book_no'];?></td>
+        <td> <?php echo $row['title'];?></td>
+	<td> <?php echo $row['edition'];?></td>
+        <td> <?php echo $row['publisher'];?></td>
+        </tr>
+
+        <?php
+        }
+        ?>
+
+</table>
+  </body>
+</html>
